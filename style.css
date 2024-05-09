@@ -1,0 +1,26 @@
+/*
+Theme Name: Codeflies
+Theme URI: https://www.codeflies.com/
+Author: Manjeet Singh
+Author URI: https://www.codeflies.com/
+Description: Custom theme 
+Version: 1.0.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: 
+License URI: 
+Text Domain: codeflies
+*/
+.postid-185 .yith-wapo-addon{
+	padding: 10px;
+}
+.postid-185 .yith-wapo-addon input{
+	width: 100%;
+    border: 1px solid #ddd;
+    padding: 4px 6px;
+ }
+.postid-185 #wapo-total-price-table{
+	padding: 10px;
+	margin-bottom: 15px;
+}

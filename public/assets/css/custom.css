@@ -1,0 +1,2258 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: sticky;
+    height: 85px;
+    background: #26235f;
+    top: 0;
+    z-index: 99;
+    transition: all .5s;
+    animation-timing-function: ease;
+}
+
+header .desk-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px 55px;
+}
+
+header.header-shadow {
+    box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+    transition: all .5s;
+    animation-timing-function: ease;
+}
+
+section.res-header.header-shadow {
+    box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+    transition: all .5s;
+    animation-timing-function: ease;
+}
+
+.nav-desk ul {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.nav-desk {
+    display: flex;
+    padding-top: 30px;
+}
+
+.logo-desk {
+    z-index: 9;
+}
+
+.nav-desk ul li a {
+    font-size: 23px;
+    text-decoration: none;
+    color: #FFFDD0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.first-hero-slide .slick-slide .slide-imgg {
+    height: calc(100vh - 85px);
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    object-position: center;
+    z-index: -2;
+}
+
+.first-hero-slide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    z-index: 9;
+}
+
+.first-hero-slide .slick-left.slick-arrow {
+    left: 20px;
+}
+
+.first-hero-slide .slick-right.slick-arrow {
+    right: 0;
+}
+
+.first-hero-slide .slick-arrow i {
+    color: white;
+    font-size: 30px;
+}
+
+.first-hero-slide .item {
+    position: relative;
+    z-index: 0 !important;
+}
+
+.first-hero-slide .slider-caption-main {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    /* display: none; */
+    z-index: 9;
+}
+
+.first-hero-slide .item:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: "";
+    background-color: #000000ba;
+}
+
+.first-hero-slide .slick-slide:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    z-index: -1;
+    bottom: 0;
+    opacity: .4;
+}
+
+.first-hero-slide .slider-caption-main img {
+    width: 500px;
+}
+
+.first-hero-slide h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.first-hero-slide h3 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 54px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.first-hero-slide a {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    color: #392d28;
+    background-color: #fff;
+    padding: 14px 30px;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+
+
+section.second-sec-bg {
+    background: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/10/bg1.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    padding: 105px 0 160px 0;
+}
+
+.main-head-bg-sec h2 {
+    font-family: 'Yeseva One', cursive;
+    color: #392d28;
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.main-head-bg-sec {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.main-head-bg-sec p {
+    font-size: 18px;
+    line-height: 37px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #392d28;
+    text-transform: normal;
+    font-family: 'Oswald', sans-serif;
+}
+
+.eats-box {
+    height: 100%;
+}
+
+.eats-box img {
+    height: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+.eats-box h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color: #392d28;
+    text-align: center;
+    text-transform: normal;
+    font-weight: 700;
+}
+
+section.book-sec {
+    background: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/10/MSB-Hall-of-Fame-Lo-Res-68-scaled.jpg);
+    padding-top: 180px;
+    padding-bottom: 170px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+section.book-sec .book-sec-bg {
+    /* width: 50%; */
+    margin: auto;
+}
+
+section.book-sec .book-sec-bg h2 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 52px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+section.book-sec .book-sec-bg p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: white;
+    text-transform: normal;
+    font-family: 'Oswald', sans-serif;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.book-sec .book-sec-bg a {
+    background: white;
+    color: #392d28;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: normal;
+    padding: 15px 30px;
+    letter-spacing: .5px;
+    display: block;
+    width: 155px;
+    margin: auto;
+}
+
+section.book-sec .book-sec-bg p:nth-child(3) {
+    margin-bottom: 40px;
+}
+
+section.book-sec:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: -1;
+    opacity: .7;
+}
+
+section.dish-menu-sec {
+    padding: 105px 0;
+    background: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/10/bg2.jpg);
+    background-position: top center;
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+section.dish-menu-sec .main-head-bg-sec h2 {
+    margin-bottom: 0px;
+}
+
+section.dish-menu-sec .main-head-bg-sec h5 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #392d28;
+    text-align: center;
+    text-transform: normal;
+    font-weight: 700;
+}
+
+.menu-list-tab h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color: #392d28;
+    text-align: center;
+    text-transform: normal;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.menu-list-tab {
+    padding: 40px 0;
+}
+
+.each-menu h4 {
+    color: #392d28;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 2px dashed #392d284d;
+    margin-bottom: 10px;
+    padding-bottom: 12px;
+}
+
+.each-menu {
+    margin-bottom: 30px;
+}
+
+.each-menu h6 {
+    color: #24292f99;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    min-height: 33px;
+}
+
+a.full-menu,
+input.add-to-cart-custom {
+    background: #392d28;
+    color: #edebe7;
+    padding: 15px 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-transform: normal;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+input.add-to-cart-custom {
+    margin-left: 18px;
+}
+
+section.gallery-sec {
+    /*background: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/10/pattern2.jpg);*/
+    background-color: #26235f;
+    background-position: top center;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: auto;
+    position: relative;
+}
+
+section.gallery-sec .all-gally-img {
+    width: 100%;
+    padding: 20px;
+}
+
+section.gallery-sec .all-gally-img .row .col-lg-3.col-md-6 {
+    padding: 0 10px;
+}
+
+section.press-article {
+    padding: 70px 0;
+    background: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/10/pattern4.jpg);
+    background-position: top center;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: auto;
+}
+
+section.press-article .main-head-bg-sec.excp {
+    text-align: left;
+}
+
+section.press-article .main-head-bg-sec.excp h2 {
+    margin-bottom: 5px;
+}
+
+section.press-article .main-head-bg-sec.excp h5 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #392d28;
+    /* text-align: center; */
+    text-transform: normal;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.main-head-bg-sec.excp a {
+    background: #392d28;
+    color: #edebe7;
+    padding: 15px 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-transform: normal;
+    font-weight: 500;
+    letter-spacing: .5px;
+    display: block;
+    width: 156px;
+}
+
+section.sub-footer {
+    /*background: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/10/pattern3.jpg);*/
+    background-color: #26235f;
+    padding: 40px;
+}
+
+section.sub-footer h2 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    text-transform: normal;
+    font-weight: 700;
+}
+
+.subscribe-foot input {
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 0px !important;
+    border: 2px solid #525458;
+    padding: 15px;
+    background: #ffffff1a;
+    width: 405px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.prss-art img {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.all-gally-img:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(36, 41, 47, 0) 50%, #26235f 99%, rgba(36, 41, 47, 1) 100%);
+}
+
+.subscribe-foot button {
+    color: #edebe7;
+    background: #525458;
+    padding: 18px 12px;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-transform: normal;
+    font-weight: 600;
+}
+
+.subscribe-foot {
+    display: flex;
+}
+
+::placeholder {
+    color: #929292;
+    font-family: 'Oswald', sans-serif;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #929292;
+    font-family: 'Oswald', sans-serif;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #929292;
+    font-family: 'Oswald', sans-serif;
+}
+
+footer {
+    background: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/10/pattern5.jpg);
+    padding: 105px 0 20px 0;
+    text-align: center;
+}
+
+footer .foot-cont h3 {
+    color: white;
+    font-size: 32px;
+    font-family: 'Yeseva One', cursive;
+    margin-bottom: 30px;
+}
+
+footer .foot-cont ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .foot-cont ul li {
+    margin-bottom: 20px;
+}
+
+footer .foot-cont ul li a {
+    color: #827976;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+footer .foot-cont p {
+    color: #827976;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: -10px;
+}
+
+.social-foot ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    gap: 30px;
+}
+
+.social-foot ul li a i {
+    color: #6e6664;
+    font-size: 35px;
+}
+
+.social-foot {
+    padding: 20px 0 30px 0;
+}
+
+footer p {
+    color: #5c524e;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+section.res-header {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: ;
+    display: !important;
+    unicode-bidi: normal;
+    shape-outside: var(100px);
+}
+
+.press-slider .slick-active {
+    margin-right: 7px;
+}
+
+.press-slider .slick-arrow {
+    position: absolute;
+    top: 52%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0px 10px 10px 0px;
+    z-index: 3;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #26235f;
+}
+
+.press-slider .slick-prev:before,
+.press-slider .slick-next:before {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+.press-slider button.slick-prev.slick-arrow {
+    border-radius: 10px 0px 0px 10px !important;
+}
+
+.press-slider button.slick-prev.slick-arrow {
+    left: -60px !important;
+}
+
+.press-slider button.slick-next.slick-arrow {
+    right: -60px !important;
+}
+
+.press-slider .row.d-flex {
+    align-items: center;
+}
+
+
+.bg-sec {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.bg-sec.menubg {
+    background-image: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/11/Screen-Shot-2022-11-01-at-12.41.57-PM.png);
+    background-position: center;
+}
+
+.bg-sec.mugclub {
+    background-image: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/11/180-of-279-scaled.jpg);
+    background-position: center;
+}
+
+section.bg-sec.event {
+    background-image: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/11/IMG_7210-scaled.jpg);
+    background-position: top;
+}
+
+.bg-sec h1 {
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Yeseva One', cursive;
+}
+
+.bg-sec ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+.bg-sec ul li {
+    color: #fff;
+    font-size: 18px;
+    margin: 5px 3px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.elementor-element-39f03cc .elementor-widget-wrap.elementor-element-populated {
+    padding: 0 !important;
+}
+
+#wpcf7-f93-p87-o1 .form-control,
+#wpcf7-f101-p110-o1 .form-control {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border-radius: 0;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #ffffff7a;
+    background-clip: padding-box;
+    margin-top: 8px;
+}
+
+#wpcf7-f101-p110-o1 .form-control {
+    background-color: #fff0;
+}
+
+.elementor-element-0b7c45a .elementor-widget-wrap.elementor-element-populated {
+    padding: 0 !important;
+}
+
+#wpcf7-f101-p110-o1 label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    line-height: 24px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#wpcf7-f93-p87-o1 .btn,
+.form-control {
+    height: 55px;
+}
+
+#wpcf7-f93-p87-o1 .form-control {
+    border-radius: 0;
+    border: 1px solid #c9c9c9;
+}
+
+#wpcf7-f93-p87-o1 input[type=checkbox],
+input[type=radio] {
+    width: 24px !important;
+    height: 30px !important;
+    display: inline-block;
+}
+
+.wpcf7-form-control-wrap span.wpcf7-form-control.wpcf7-checkbox.form-control {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+#wpcf7-f93-p87-o1 .col-lg-12.form-group {
+    margin-bottom: 25px;
+}
+
+#wpcf7-f93-p87-o1 label {
+    font-size: 16px;
+    margin-bottom: 0px;
+    width: 100%;
+    line-height: 24px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#wpcf7-f93-p87-o1 .btn-primary {
+    color: #fff;
+    background-color: #f68401;
+    border-color: #f68401;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: helvitica;
+}
+
+textarea.wpcf7-form-control.wpcf7-textarea.form-control {
+    height: 150px !important;
+}
+
+.wpcf7-form p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #392d28;
+    text-transform: normal;
+    font-family: 'Oswald', sans-serif;
+}
+
+#submit {
+    width: fit-content !important;
+    background: #392d28 !important;
+    color: #edebe7 !important;
+    padding: 14px 60px !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px !important;
+    text-transform: normal;
+}
+
+.dummy {
+    margin-top: 24px !important;
+}
+
+div#wpcf7-f101-p110-o1 {
+    background: #ededed8a;
+    padding: 20px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+}
+
+.each-menu span {
+    float: right;
+}
+
+
+div#sidebar {
+    display: none;
+}
+
+nav.woocommerce-breadcrumb {
+    background-image: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/11/180-of-279-scaled.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 50vh;
+    background-color: #e5e5e5;
+    text-align: center;
+    display: flex;
+    font-family: 'Oswald';
+    font-size: 20px !important;
+    color: #fff !important;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+}
+
+div#primary {
+    padding-top: 100px;
+    background-image: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/10/bg1.jpg);
+}
+
+
+.tab-content img {
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.product-details div.images img {
+    border-radius: 20px;
+}
+
+h3.product-title {
+    font-size: 50px;
+    font-family: 'Yeseva One';
+    margin-bottom: 30px;
+}
+
+.price bdi {
+    font-size: 40px;
+    color: #26235f;
+    font-family: 'Yeseva One';
+    margin-bottom: 10px;
+}
+
+.price {
+    margin-bottom: 20px;
+}
+
+span.price-each {
+    font-size: 22px;
+    font-family: 'Yeseva One';
+    color: #26235f;
+}
+
+.product-description {
+    font-family: 'Oswald', sans-serif;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.details label {
+    font-size: 16px;
+    margin-bottom: 0px;
+    width: 100%;
+    line-height: 24px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.woocommerce .quantity .qty {
+    width: 3.631em;
+    text-align: center;
+    padding: 12px 15px;
+    font-weight: 400;
+    color: #495057;
+    background-color: #ffffff7a;
+    border: 1px solid #ced4da;
+}
+
+form.cart {
+    padding: 0px 16px;
+}
+
+button.single_add_to_cart_button.button.alt.wp-element-button {
+    border-radius: 0;
+    padding: 14px 30px;
+    font-family: 'Oswald';
+}
+
+span.wpcf7-form-control.wpcf7-radio.form-control {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+}
+
+#nav-home ul {
+    margin-left: 10px;
+}
+
+#nav-home li {
+    line-height: 30px;
+    font-size: 16px;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 30px;
+    list-style: none;
+}
+
+#nav-home li:before {
+    position: absolute;
+    left: 0;
+    content: "\f111";
+    font-family: 'Font Awesome 5 free';
+    font-weight: 600;
+    font-size: 8px;
+}
+
+#nav-home h3 {
+    font-size: 24px;
+    font-family: 'Oswald';
+    margin-bottom: 20px;
+}
+
+.col-lg-6.mugnum {
+    display: none;
+}
+
+.col-lg-6.mugnum2 {
+    display: none;
+}
+
+
+
+.bg-section {
+    background-image: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/11/heading-1-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 38vh;
+    background-color: #e5e5e5;
+    text-align: center;
+    display: flex;
+    font-family: 'Oswald';
+    font-size: 20px !important;
+    color: #fff !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+}
+
+.product-details {
+    padding: 80px 160px;
+    background-image: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/10/bg1.jpg);
+}
+
+
+.calendar-sec {
+    background-image: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/10/bg1.jpg);
+    padding: 80px 0;
+}
+
+div#calendar {
+    background-color: #efefef;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#calendar .fc-header-toolbar.fc-toolbar.fc-toolbar-ltr {
+    padding: 30px;
+}
+
+.fc-daygrid-event-dot {
+    margin: 0 auto !important;
+}
+
+h2#fc-dom-1 {
+    font-family: 'Oswald';
+    text-transform: normal;
+    font-size: 40px;
+    color: #26235f;
+    font-weight: 700;
+}
+
+.decription {
+    float: left;
+    width: 100%;
+    margin-top: 80px;
+}
+
+#tabs {
+    background: #fbe122;
+    color: #eee;
+}
+
+#tabs h6.section-title {
+    color: #eee;
+}
+
+.decription .nav-link {
+    flex: none;
+    color: #000;
+    font-weight: 500;
+    margin: 0px 0px;
+}
+
+.decription .tab-content>.active {
+    text-align: left;
+    font-size: 15px;
+}
+
+.decription .nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+
+
+#tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #26235f;
+    background-color: white;
+    border-color: transparent transparent #fbe122;
+    border-bottom: 3px solid !important;
+    font-size: 26px;
+    font-family: 'Oswald';
+    padding: 10px 30px;
+    text-transform: normal;
+}
+
+#tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #eee;
+    font-size: 20px;
+}
+
+
+.preview-pic {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.preview-thumbnail.nav-tabs {
+    border: none;
+}
+
+.preview-thumbnail.nav-tabs li {
+    width: 23%;
+    margin-right: 2.5%;
+}
+
+.preview-thumbnail.nav-tabs li img {
+    max-width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+.preview-thumbnail.nav-tabs li a {
+    padding: 0;
+    margin: 0;
+}
+
+.preview-thumbnail.nav-tabs li:last-of-type {
+    margin-right: 0;
+}
+
+.tab-content {
+    overflow: hidden;
+}
+
+.tab-content img {
+    width: 100%;
+    -webkit-animation-name: opacity;
+    animation-name: opacity;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+}
+
+
+
+@-webkit-keyframes opacity {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(3);
+        transform: scale(3);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(3);
+        transform: scale(3);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+a.fc-daygrid-event.fc-daygrid-dot-event.fc-event.fc-event-draggable.fc-event-resizable.fc-event-start.fc-event-end.fc-event-past {
+    display: block !important;
+    text-align: center;
+    white-space: break-spaces;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+input#Submit {
+    width: fit-content !important;
+    background: #392d28 !important;
+    color: #edebe7 !important;
+    padding: 14px 60px !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px !important;
+    text-transform: normal;
+}
+
+.wpcf7-response-output {
+    color: white !important;
+}
+
+element.elementor-element-5b2ed26 .elementor-heading-title {
+    text-transform: capitalize !important;
+}
+
+.giftform label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    line-height: 24px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+input.addtocart {
+    margin-left: 12px;
+    margin-top: 10px;
+}
+
+
+
+section.gift {
+    padding: 10px 0 60px;
+    background: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/10/bg2.jpg);
+    background-position: top center;
+    background-repeat: repeat-y;
+}
+
+.img {
+    text-align: center;
+}
+
+.img img {
+    width: 100%;
+    margin: 20px;
+}
+
+
+#product-185 img.wp-post-image {
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+#product-185 div.images img {
+    border-radius: 20px;
+}
+
+.single-product h1.product_title.entry-title {
+    font-size: 50px;
+    font-family: 'Yeseva One';
+    margin-bottom: 30px;
+}
+
+.price span.woocommerce-Price-amount.amount bdi {
+    font-size: 40px;
+    color: #26235f;
+    font-family: 'Yeseva One';
+    margin-bottom: 10px;
+}
+
+.price {
+    margin-bottom: 20px;
+}
+
+span.price-each {
+    font-size: 22px;
+    font-family: 'Yeseva One';
+    color: #26235f;
+}
+
+.woocommerce-product-details__short-description p {
+    font-family: 'Oswald';
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.woocommerce-message {
+    border-top-color: #26235f;
+    margin: 0;
+    font-family: 'Oswald';
+    padding: 10px 50px;
+    background-color: #fffdd0;
+}
+
+a.button.wc-forward.wp-element-button {
+    background-color: #333;
+    color: #fff;
+}
+
+
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    line-height: 24px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#product-185 {
+    padding: 80px 160px;
+    background-image: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/10/bg1.jpg);
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border-radius: 0;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #ffffff7a;
+    background-clip: padding-box;
+    margin-top: 8px;
+}
+
+.single-product span.wpcf7-form-control.wpcf7-radio.form-control {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+}
+
+.product_meta {
+    display: none;
+}
+
+li#tab-title-reviews {
+    display: none;
+}
+
+div#reviews {
+    display: none;
+}
+
+li#tab-title-description {
+    font-size: 26px;
+    font-family: 'Oswald';
+}
+
+#tab-description h2 {
+    display: none;
+}
+
+#tab-description p {
+    line-height: 28px;
+    font-size: 16px;
+    font-family: 'Graduate';
+}
+
+#tab-description li {
+    line-height: 30px;
+    font-size: 16px;
+    font-family: 'Graduate';
+}
+
+#tab-description ul {
+    margin-left: 30px;
+}
+
+#tab-description ul li ul {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#tab-description h3 {
+    font-size: 24px;
+    font-family: 'Oswald';
+    margin-bottom: 20px;
+}
+
+
+.woocommerce .woocommerce-breadcrumb a {
+    color: #ffffff;
+}
+
+.page-id-105 .woocommerce,
+.page-id-106 .woocommerce {
+    padding: 80px 160px;
+    overflow:auto;
+    background-image: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/10/bg1.jpg);
+}
+
+td.actions {
+    display: none !important;
+}
+
+.woocommerce .quantity .qty {
+    width: 4.631em;
+}
+
+.shop_table thead tr th {
+    font-family: 'Yeseva One', cursive;
+}
+
+.shop_table tbody tr td {
+    font-family: 'Oswald';
+}
+
+.woocommerce .cart-collaterals {
+    width: 49%;
+    margin-left: auto;
+}
+
+
+.cart_totals {
+    width: 90% !important;
+}
+
+.cart_totals h2 {
+    font-family: 'Yeseva One';
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.cart_totals tbody tr th {
+    font-family: 'Yeseva One', cursive;
+}
+
+.cart_totals tbody tr td {
+    font-family: 'Oswald';
+}
+
+a.button.wc-forward.wp-element-button {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+}
+
+ul.wc-ppcp-cart-payment__methods {
+    display: none;
+}
+
+section.related.products h2 {
+    font-size: 40px;
+    font-family: 'Yeseva One';
+    margin-bottom: 20px;
+}
+
+a.button.wp-element-button.product_type_variable.add_to_cart_button {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Oswald';
+}
+
+.col2-set .col-1 {
+    max-width: 50% !important;
+    padding: 0;
+}
+
+.col2-set .col-2 {
+    max-width: 50% !important;
+    padding: 0;
+}
+
+.checkout.woocommerce-checkout span {
+    width: 100%;
+}
+
+.woocommerce-privacy-policy-text p {
+    font-family: 'Oswald';
+}
+
+.form-row.place-order {
+    align-items: center;
+    float:left;
+    justify-content: space-between;
+}
+
+textarea#order_comments {
+    display: block;
+    height: auto;
+    padding: 12px 15px;
+    border-radius: 0;
+    border: 1px solid #ced4da;
+    font-weight: 400;
+    color: #495057;
+    background-color: #ffffff7a;
+}
+
+.woocommerce-billing-fields__field-wrapper .input-text,.woocommerce-shipping-fields__field-wrapper .input-text {
+    display: block;
+    height: auto;
+    padding: 12px 15px;
+    border-radius: 0;
+    border: 1px solid #ced4da;
+    font-weight: 400;
+    color: #495057;
+    background-color: #ffffff7a;
+}
+
+.woocommerce-billing-fields h3,
+.woocommerce-additional-fields h3 {
+    font-family: 'Yeseva One';
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#order_review_heading {
+    margin-top: 30px;
+    font-family: 'Yeseva One';
+    font-size: 40px;
+}
+
+#order_review {
+    margin-top: 20px;
+}
+
+
+p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
+    font-size: 22px;
+    font-family: 'Oswald';
+    color: #0cbb2b;
+    margin-bottom: 20px;
+}
+
+ul.woocommerce-order-overview.woocommerce-thankyou-order-details.order_details li {
+    font-size: 16px !important;
+    font-family: 'Oswald';
+}
+
+.woocommerce-order p {
+    font-size: 24px !important;
+    font-family: 'Yeseva One';
+    margin-bottom: 20px;
+}
+
+h2.woocommerce-order-details__title {
+    font-size: 20px !important;
+    font-family: 'Yeseva One';
+    margin-bottom: 20px;
+}
+
+.woocommerce h2 {
+    font-size: 40px;
+    font-family: 'Yeseva One';
+    margin-bottom: 10px;
+}
+
+#wc-wpg_paypal_rest-cc-form input {
+    display: block;
+    height: auto;
+    padding: 12px 15px;
+    border-radius: 0;
+    border: 1px solid #ced4da;
+    font-weight: 400;
+    color: #495057;
+    background-color: #ffffff7a;
+}
+
+.select2-container--default .select2-selection--single {
+    display: block;
+    height: auto;
+    padding: 12px 15px;
+    border-radius: 0;
+    border: 1px solid #ced4da;
+    font-weight: 400;
+    color: #495057;
+    background-color: #ffffff7a;
+}
+
+p.form-row.woocommerce-SavedPaymentMethods-saveNew.woocommerce-validated {
+    display: inline-block;
+}
+
+li.woocommerce-SavedPaymentMethods-new {
+    display: inline-flex;
+}
+
+.payment_box.payment_method_wpg_paypal_rest p {
+    font-family: 'Oswald';
+    font-size: 17px;
+    line-height: 30px;
+}
+
+#product-869 {
+    padding: 30px 160px;
+}
+
+select#pa_gift-card-amount {
+    padding: 12px 15px;
+    background-color: #ffffff7a;
+    border: 1px solid #ced4da;
+    width: 80% !important;
+}
+
+.woocommerce-variation-price {
+    margin-bottom: 20px;
+}
+.woocommerce-radio-wrapper br {
+    display: none;
+}
+input#createaccount {
+    width: 24px;
+    height: 30px;
+}
+.payment_method_cod label {
+    display: inline;
+}
+.payment_method_yith-paypal-ec label {
+    display: inline;
+}
+
+.wc_payment_method img {
+    display: block;
+    margin: 10px 0 !important;
+}
+input#billing_member_No {
+    margin-left: 20px;
+}
+@media (min-width:1500px) and (max-width:2400px) {
+    .nav-desk ul {
+        gap: 80px;
+    }
+
+}
+
+@media(min-width:768px) {
+    .phone-navigation {
+        display: none;
+    }
+}
+
+@media(max-width: 1199px) {
+    .subscribe-foot span.wpcf7-form-control-wrap {
+        width: 60%;
+    }
+
+    .woocommerce-billing-fields h3,
+    .woocommerce-additional-fields h3 {
+        font-size: 33px;
+    }
+
+    .nav-desk ul li a {
+        font-size: 18px;
+    }
+
+    .page-id-105 .woocommerce,
+    .page-id-106 .woocommerce {
+        padding: 100px 60px;
+    }
+
+    .woocommerce-privacy-policy-text {
+        margin-bottom: 10px;
+    }
+        form.checkout.woocommerce-checkout {
+        overflow: hidden;
+    }
+    .woocommerce-privacy-policy-text p {
+        font-family: 'Oswald';
+        line-height: 1.50;
+    }
+    #product-869{
+        padding: 30px 20px;
+    }
+    div#primary {
+        padding-top: 40px;
+    }
+}
+
+
+@media(max-width:768px) {
+    .press-slider button.slick-prev.slick-arrow {
+        left: -30px !important;
+    }
+
+    .press-slider button.slick-next.slick-arrow {
+        right: -30px !important;
+    }
+
+    .nav-desk ul li a {
+        font-size: 17px;
+    }
+
+    .nav-desk ul {
+        gap: 33px;
+    }
+
+    .bg-sec h1 {
+        font-size: 40px;
+    }
+
+    .product-details {
+        padding: 50px 50px;
+    }
+
+    button.fc-today-button.fc-button.fc-button-primary {
+        margin-top: 4px;
+    }
+
+    .page-id-105 .woocommerce {
+        padding: 100px 40px;
+    }
+
+    .woocommerce .cart-collaterals {
+        width: 100%;
+    }
+
+    .cart_totals {
+        width: 100% !important;
+    }
+
+    .page-id-105 .woocommerce,
+    .page-id-106 .woocommerce {
+        padding: 80px 40px;
+    }
+
+    .col2-set .col-1 {
+        max-width: 100% !important;
+    }
+
+    .col2-set .col-2 {
+        max-width: 100% !important;
+    }
+
+    .woocommerce-billing-fields h3,
+    .woocommerce-additional-fields h3 {
+        font-size: 33px;
+    }
+
+    #order_review_heading {
+        font-size: 33px;
+    }
+
+
+}
+
+@media(max-width:1023px) {
+    header .desk-head {
+        padding: 0 30px;
+    }
+
+    .main-head-bg-sec {
+        width: 100%;
+    }
+
+    .main-head-bg-sec p {
+        font-size: 16px;
+        line-height: 31px;
+    }
+
+    .eats-box img {
+        margin-bottom: 5px;
+    }
+
+    section.second-sec-bg .col-lg-4.col-md-6 {
+        margin-bottom: 35px;
+    }
+
+    .eats-box img {
+        margin-bottom: 5px;
+        height: 532px;
+        object-fit: cover;
+    }
+
+    section.book-sec .book-sec-bg h2 {
+        font-family: 'Yeseva One', cursive;
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 15px;
+        font-weight: normal;
+        color: #ffffff;
+    }
+
+    section.book-sec {
+        padding: 70px 0;
+    }
+
+    section.book-sec .book-sec-bg p {
+        font-size: 16px;
+        width: 100%;
+        line-height: 31px;
+        padding: 0 30px;
+    }
+
+    section.second-sec-bg {
+        padding: 70px 0 55px 0;
+    }
+
+    section.dish-menu-sec {
+        padding: 70px 0;
+    }
+
+    .menu-imgg {
+        margin-bottom: 30px;
+    }
+
+    .menu-list-tab {
+        padding: 0;
+    }
+
+    .each-menu h6 {
+        min-height: 50px;
+    }
+
+    .gall-img {
+        margin-bottom: 20px;
+    }
+
+    section.gallery-sec .all-gally-img .row .col-lg-3.col-md-6:nth-child(3) .gall-img {
+        margin-bottom: 0px;
+    }
+
+    section.gallery-sec .all-gally-img .row .col-lg-3.col-md-6:nth-child(4) .gall-img {
+        margin-bottom: 0px;
+    }
+
+    section.sub-footer {
+        background: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/10/pattern3.jpg);
+        padding: 40px 30px;
+    }
+
+    footer {
+        padding: 70px 0 20px 0;
+    }
+
+    .foot-cont {
+        margin-bottom: 50px;
+    }
+
+    footer .foot-cont h3 {
+        color: white;
+        font-size: 32px;
+        font-family: 'Yeseva One', cursive;
+        margin-bottom: 15px;
+    }
+
+    footer .foot-cont ul li {
+        margin-bottom: 15px;
+    }
+
+    footer p {
+        color: #5c524e;
+        font-family: 'Oswald', sans-serif;
+        font-size: 15px;
+        margin-bottom: 0px;
+        line-height: 23px;
+    }
+
+    .press-slider button.slick-prev.slick-arrow {
+        left: -30px !important;
+    }
+
+    .press-slider button.slick-next.slick-arrow {
+        right: -30px !important;
+    }
+
+}
+
+
+
+@media(max-width:1024px) {
+    .press-slider button.slick-prev.slick-arrow {
+        left: -30px !important;
+    }
+
+    .press-slider button.slick-next.slick-arrow {
+        right: -30px !important;
+    }
+
+    .product-details {
+        padding: 50px 40px;
+    }
+
+    .page-id-105 .woocommerce {
+        padding: 80px 20px;
+    }
+
+    .nav-desk ul li a {
+        font-size: 18px;
+    }
+
+    .page-id-105 .woocommerce,
+    .page-id-106 .woocommerce {
+        padding: 100px 40px;
+    }
+
+    .woocommerce-billing-fields h3,
+    .woocommerce-additional-fields h3 {
+        font-size: 33px;
+    }
+
+}
+
+
+
+@media(max-width:992px) {
+    .dummy {
+        margin-top: 0px !important;
+    }
+
+    .nav-desk ul {
+        gap: 18px;
+    }
+
+    .nav-desk ul li a {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .first-hero-slide .slider-caption-main img {
+        width: 280px;
+    }
+
+    .subscribe-foot {
+        display: flex;
+        justify-content: center;
+    }
+
+    header {
+        display: none;
+    }
+
+    section.res-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0px 15px;
+        top: 0;
+        z-index: 99999;
+        background: #ECEBE7;
+        transition: all .5s;
+        position: sticky;
+        height: 65px;
+        animation-timing-function: ease;
+        top: 0;
+    }
+
+    section.res-header .phone-logo img {
+        width: 100px;
+    }
+
+    section.res-header .phone-bar i {
+        color: #392d28;
+        font-size: 30px;
+    }
+
+    .phone-bar {
+        padding-top: 20px;
+    }
+
+    .phone-navigation {
+        background: #392d28;
+        padding: 15px;
+        max-width: 280px;
+        top: 0;
+        position: fixed;
+        z-index: 9999999;
+        width: 280px;
+        height: 100%;
+        overflow: hidden;
+        left: -100%;
+        transition: all .5s;
+        transition-timing-function: ease;
+    }
+
+    .phone-navigation .res-asset .logo img {
+        width: 60px;
+    }
+
+    .phone-navigation .res-asset {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .phone-navigation .res-asset .cross h3 {
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .phone-navigation ul li a {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+        text-transform: normal;
+    }
+
+    .phone-navigation ul li {
+        margin-bottom: 15px;
+        border-bottom: 1px dashed white;
+        padding-bottom: 10px;
+    }
+
+    .phone-navigation ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .first-hero-slide .slick-slide .slide-imgg {
+        height: calc(100vh - 65px);
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .phone-navigation-add {
+        left: 0;
+        transition: all .5s;
+        transition-timing-function: ease;
+    }
+
+    body.body-over {
+        overflow: hidden;
+    }
+
+    section.second-sec-bg {
+        padding: 30px 0 25px 0;
+    }
+
+    .main-head-bg-sec h2 {
+        font-family: 'Yeseva One', cursive;
+        color: #392d28;
+        font-weight: 500;
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    .main-head-bg-sec p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .main-head-bg-sec {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .eats-box img {
+        margin-bottom: 5px;
+        height: 350px;
+        object-fit: cover;
+        width: 100%;
+        object-position: top;
+    }
+
+    section.book-sec .book-sec-bg h2 {
+        font-family: 'Yeseva One', cursive;
+        font-size: 25px;
+        line-height: 32px;
+        margin-bottom: 15px;
+        font-weight: normal;
+        color: #ffffff;
+        padding: 0 15px;
+    }
+
+    section.book-sec .book-sec-bg h2 br {
+        display: none;
+    }
+
+    section.book-sec .book-sec-bg p {
+        font-size: 14px;
+        width: 100%;
+        line-height: 25px;
+        padding: 0 15px;
+    }
+
+    section.book-sec .book-sec-bg p:nth-child(3) {
+        margin-bottom: 20px;
+    }
+
+    section.book-sec {
+        padding: 50px 0;
+    }
+
+    section.dish-menu-sec {
+        padding: 30px 0;
+    }
+
+    .menu-imgg {
+        margin-bottom: 15px;
+    }
+
+    .menu-list-tab {
+        padding: 15px 0;
+    }
+
+    a.full-menu {
+        display: block;
+        width: 200px;
+        margin: auto;
+    }
+
+    .gall-img {
+        margin-bottom: 15px;
+    }
+
+    .each-menu:last-child {
+        margin-bottom: 0px;
+    }
+
+    section.gallery-sec .all-gally-img .row .col-lg-3.col-md-6:nth-child(3) .gall-img {
+        margin-bottom: 20px;
+    }
+
+    .prss-art {
+        margin-bottom: 30px;
+    }
+
+    section.press-article .main-head-bg-sec.excp p br {
+        display: none;
+    }
+
+    section.press-article .main-head-bg-sec.excp {
+        margin-bottom: 0px;
+    }
+
+    section.sub-footer {
+        background: url(https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/10/pattern3.jpg);
+        padding: 40px 15px;
+    }
+
+    section.sub-footer h2 {
+        margin-bottom: 20px;
+    }
+
+    .subscribe-foot input {
+        outline: none !important;
+        box-shadow: none !important;
+        border-radius: 0px !important;
+        border: 2px solid #525458;
+        padding: 15px;
+        background: #ffffff1a;
+        width: 180px;
+    }
+
+    .subscribe-foot button {
+        color: #edebe7;
+        background: #525458;
+        padding: 18px 4px;
+        outline: none !important;
+        box-shadow: none !important;
+        border: none !important;
+        font-family: 'Oswald', sans-serif;
+        font-size: 14px;
+        text-transform: normal;
+        font-weight: 600;
+    }
+
+    .bg-sec {
+        background-size: 100% 100%;
+        height: 40vh;
+    }
+
+    .first-hero-slide h1 {
+        font-size: 37px;
+    }
+
+    .first-hero-slide h3 {
+        font-size: 37px;
+    }
+
+    .bg-sec h1 {
+        font-size: 37px;
+    }
+
+    .bg-sec ul li {
+        font-size: 15px;
+        margin: 10px 3px;
+    }
+
+    .menu-imgg img.img-fluid {
+        width: 100%;
+    }
+
+    .product-details {
+        padding: 30px 0px;
+    }
+
+    .bg-section {
+        background-size: cover;
+    }
+
+    h3.product-title {
+        margin-top: 30px;
+    }
+
+    .decription .nav-link {
+        margin-bottom: 0 !important;
+        margin: 0px 0px !important;
+    }
+
+    .decription {
+        margin-top: 20px;
+    }
+
+    div#nav-tabContent {
+        padding: 20px 0 !important;
+    }
+
+    #nav-home li {
+        padding-left: 20px;
+    }
+
+    .calendar-sec {
+        padding: 30px 0;
+    }
+
+    #calendar .fc-header-toolbar.fc-toolbar.fc-toolbar-ltr {
+        padding: 10px;
+        display: block;
+    }
+
+    h2#fc-dom-1 {
+        margin: 10px 0;
+    }
+
+    .fc-daygrid-dot-event .fc-event-title {
+        overflow: scroll !important;
+    }
+
+    .fc .fc-scrollgrid-section table {
+        overflow: scroll !important;
+    }
+
+    a.fc-col-header-cell-cushion {
+        font-size: 14px;
+    }
+
+    #urstest p.elementor-heading-title.elementor-size-default {
+        word-break: break-all;
+    }
+
+    .img img {
+        width: 400px;
+        margin: 0px;
+    }
+
+    .img {
+        padding: 10px 10px;
+    }
+
+    .giftform {
+        margin-top: 20px;
+    }
+
+    #product-185 {
+        padding: 30px 10px;
+    }
+
+    nav.woocommerce-breadcrumb {
+        background-size: cover;
+    }
+
+    .woocommerce-message {
+        padding: 10px 12px;
+    }
+
+    .woocommerce-message::before {
+        display: none;
+    }
+
+    .page-id-105 .woocommerce {
+        padding: 80px 20px;
+    }
+
+    .woocommerce .cart-collaterals {
+        width: 100%;
+    }
+
+    .page-id-105 .woocommerce,
+    .page-id-106 .woocommerce {
+        padding: 80px 20px;
+    }
+
+    .col2-set .col-1 {
+        max-width: 100% !important;
+    }
+
+    .col2-set .col-2 {
+        max-width: 100% !important;
+    }
+
+    .woocommerce-billing-fields h3,
+    .woocommerce-additional-fields h3 {
+        font-size: 33px;
+    }
+
+    #order_review_heading {
+        font-size: 33px;
+    }
+
+    ul.woocommerce-order-overview.woocommerce-thankyou-order-details.order_details li {
+        margin-top: 20px;
+    }
+
+
+}
+
+.subscribe-foot input.wpcf7-form-control.has-spinner.wpcf7-submit.form-control {
+    color: #edebe7;
+    background: #525458;
+    padding: 18px 12px;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-transform: normal;
+    font-weight: 600;
+    max-width: 100px;
+    margin-top: 0;
+}
+
+.subscribe-foot input {
+    width: 100%;
+}
+
+.subscribe-foot form p {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subscribe-foot form span.wpcf7-spinner {
+    display: block;
+}
+
+.subscribe-foot form br {
+    display: none;
+}
+.bg-sec.menubg {
+    background-image: url(https://matterhornskibar.com/wp-content/uploads/2022/11/Screen-Shot-2022-11-01-at-12.41.57-PM.png);
+    background-position: center;
+}
+a.show_more {
+    background: #FFC439;
+    display: block;
+    padding: 8px 20px;
+    width: fit-content;
+    margin-left: 17px;
+    border-radius: 23px;
+}
