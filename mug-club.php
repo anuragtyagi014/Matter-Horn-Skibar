@@ -12,6 +12,7 @@ get_header(); ?>
 		Home </a>&nbsp;/&nbsp;<?php //the_field('breadcrumbs_title'); 
 								?>
 </div> -->
+
 <section class="bg-sec mugclub">
 	<div class="container">
 		<div class="row">
@@ -78,7 +79,7 @@ get_header(); ?>
 							<div class="price">
 								<bdi><span class="woocommerce-Price-currencySymbol">$</span><?= get_sub_field('price'); ?></bdi>
 							</div>
-							<p class="product-description" style="color:red">It’s sold out for the season! </p> 
+							<p class="product-description" style="color:red">It’s sold out for the season! </p>
 							<p class="product-description"><?= get_sub_field('description'); ?></p>
 
 							<!-- <form action="" method="post" id="mug_club_form">
@@ -161,13 +162,13 @@ get_header(); ?>
 										</div>
 									</div>
 									<!-- <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"> -->
-									<!--img id="submit_button_img" alt="PayPal - The safer, easier way to pay online!" border="0" src="https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/11/btn_buynowCC_LG.gif">
+							<!--img id="submit_button_img" alt="PayPal - The safer, easier way to pay online!" border="0" src="https://wp.localserverpro.com/matterhorn/wp-content/uploads/2022/11/btn_buynowCC_LG.gif">
 									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form-->
-							
-							
-<!-- Commented on 25 Jan 2023							 -->
-<!-- 							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+
+
+							<!-- Commented on 25 Jan 2023							 -->
+							<!-- 							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 	<input type="hidden" name="cmd" value="_s-xclick">
 	<input type="hidden" name="hosted_button_id" value="UUZ3AAV3PF9PL">
 	<table>
@@ -197,73 +198,73 @@ get_header(); ?>
 	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form> -->
-<!-- Commented on 25 Jan 2023							 -->							
-							
+							<!-- Commented on 25 Jan 2023							 -->
 
 
-								</div>
-							
-							
-						
+
+						</div>
 
 
-							<!-- <div id="smart-button-container">
+
+
+
+						<!-- <div id="smart-button-container">
 								<div style="text-align: center;">
 									<div id="paypal-button-container"></div>
 								</div>
 							</div> -->
-		
-		
 
-						</div>
-			<?php
+
+
+		</div>
+<?php
 					endif;
 				endwhile;
 			endif;
-			?>
-			<div class="row">
-				<div class="col-lg-12">
-					<?php
-					if (have_rows('full_description')) :
-						while (have_rows('full_description')) : the_row();
-							if (get_row_layout() == 'all_content') :
-					?>
-								<div class="decription">
-									<nav>
-										<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-											<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false"><?= get_sub_field('heading_tab'); ?></a>
-										</div>
-									</nav>
-									<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-										<div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-<!-- 											<h3><?= get_sub_field('tab_content_heading'); ?></h3> -->
-<h3> Sold Out For the Season</h3>
+?>
+<div class="row">
+	<div class="col-lg-12">
+		<?php
+		if (have_rows('full_description')) :
+			while (have_rows('full_description')) : the_row();
+				if (get_row_layout() == 'all_content') :
+		?>
+					<div class="decription">
+						<nav>
+							<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+								<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false"><?= get_sub_field('heading_tab'); ?></a>
+							</div>
+						</nav>
+						<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+							<div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+								<!-- 											<h3><?= get_sub_field('tab_content_heading'); ?></h3> -->
+								<h3> Sold Out For the Season</h3>
 
-											<ul>
-												<?php foreach (get_sub_field('bullet_points') as $list_ele) : ?>
-													<li><?= $list_ele['list_detail']; ?></li>
-												<?php endforeach; ?>
-												<li><?= get_sub_field('last_list_heading'); ?>
-													<ul>
-														<?php foreach (get_sub_field('last_list_bullet_points') as $second_list) : ?>
-															<li>
-																<?= $second_list['details']; ?>
-															</li>
-														<?php endforeach; ?>
-													</ul>
+								<ul>
+									<?php foreach (get_sub_field('bullet_points') as $list_ele) : ?>
+										<li><?= $list_ele['list_detail']; ?></li>
+									<?php endforeach; ?>
+									<li><?= get_sub_field('last_list_heading'); ?>
+										<ul>
+											<?php foreach (get_sub_field('last_list_bullet_points') as $second_list) : ?>
+												<li>
+													<?= $second_list['details']; ?>
 												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-					<?php
-							endif;
-						endwhile;
-					endif;
-					?>
-				</div>
-			</div>
-		</div>
+											<?php endforeach; ?>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+		<?php
+				endif;
+			endwhile;
+		endif;
+		?>
+	</div>
+</div>
+	</div>
 </section>
 
 <?php //if (isset($_POST['submit'])) {

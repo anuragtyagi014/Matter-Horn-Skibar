@@ -12,6 +12,7 @@ $args = array(
 );
 $my_query = new WP_Query($args);
 ?>
+
 <link href='../lib/main.css' rel='stylesheet' />
 <script src='../lib/main.js'></script>
 <script>
@@ -90,14 +91,16 @@ $my_query = new WP_Query($args);
   });
 </script>
 
- <section class="bg-sec event">
+<section class="bg-sec event">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-       <h1><?php  the_field('breadcrumbs_title');?></h1>
-      <!-- <ul>
-          <li><a href="<?php // echo home_url();?>">Home /</a></li>
-          <li><a><?php // the_field('breadcrumbs_title');?></a></li>
+        <h1><?php the_field('breadcrumbs_title'); ?></h1>
+        <!-- <ul>
+          <li><a href="<?php // echo home_url();
+                        ?>">Home /</a></li>
+          <li><a><?php // the_field('breadcrumbs_title');
+                  ?></a></li>
       </ul> -->
       </div>
     </div>
