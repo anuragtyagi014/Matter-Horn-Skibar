@@ -11,6 +11,7 @@
                 <option value="" price="25"> - 75 USD</option>
                 <option value="" price="25"> - 100 USD</option>
             </select>
+
             <select style="visibility: hidden" id="quantitySelect">
                 <option value="1">1</option>
                 <option value="2">2</option>
