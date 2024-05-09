@@ -1,8 +1,9 @@
 <?php
 function getData()
 {
-    //echo "this is my custom helper";
+  //echo "this is my custom helper";
 }
+
 
 
 function getPost()

@@ -14,6 +14,7 @@
         </div>
     </div>
 </section>
+
 <footer>
     <div class="container">
         <div class="row">
@@ -155,33 +156,31 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
 <style>
-
-	#billing_last_year_mug_no_field span.optional{
-		display:none!important;
-	}
+    #billing_last_year_mug_no_field span.optional {
+        display: none !important;
+    }
 </style>
 <script>
-	
-mugNoShowHide();
+    mugNoShowHide();
 
-$("input[name='billing_member']").change(function(){
-	mugNoShowHide();
-});
+    $("input[name='billing_member']").change(function() {
+        mugNoShowHide();
+    });
 
-function mugNoShowHide(){
-	var isBillingMember = $("input[name='billing_member']:checked").val();
-	var mugNo = $("#billing_last_year_mug_no_field");
+    function mugNoShowHide() {
+        var isBillingMember = $("input[name='billing_member']:checked").val();
+        var mugNo = $("#billing_last_year_mug_no_field");
 
-	if(isBillingMember == 'Yes'){
-		mugNo.find("input").attr('required','');
-		
-		mugNo.show('fast');
-	}else{
-		mugNo.find("input").removeAttr('required');
-		
-		mugNo.hide('fast');
-	}
-}
+        if (isBillingMember == 'Yes') {
+            mugNo.find("input").attr('required', '');
+
+            mugNo.show('fast');
+        } else {
+            mugNo.find("input").removeAttr('required');
+
+            mugNo.hide('fast');
+        }
+    }
     // $(document).ready(function() {
     //     $("mug_club_form").validate({
     //         rules: {
@@ -222,21 +221,18 @@ function mugNoShowHide(){
     // })
     // 
     // 
-  
-$(document).ready(function(){
-    $('.club-member select').on('change', function() {
-      if ( this.value == 'Yes')
-      {
-        $(".club-member-box").show();
-		  $("input[name='os3']").attr('required','');
-      }
-      else
-      {
-        $(".club-member-box").hide();
-		$(".club-member-box .cmb").removeAttr("required");
-      }
+
+    $(document).ready(function() {
+        $('.club-member select').on('change', function() {
+            if (this.value == 'Yes') {
+                $(".club-member-box").show();
+                $("input[name='os3']").attr('required', '');
+            } else {
+                $(".club-member-box").hide();
+                $(".club-member-box .cmb").removeAttr("required");
+            }
+        });
     });
-});
 </script>
 </body>
 

@@ -9,6 +9,7 @@ get_header();
             get_template_part('resources/components/post', 'file');
             ?>
 
+
         </div>
         <hr class="featurette-divider">
     </div>
